@@ -7575,7 +7575,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">path_dir_start</span> <span class="o">=</span> <span class="s1">'C:/Users/kgrit/OneDrive/Documents/UC boulder Data science masters/Intro to deep learning/week 3/assignment/'</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">path_dir_start</span> <span class="o">=</span> <span class="s1">'C:/Users/assignment/'</span>
 <span class="n">train_path</span> <span class="o">=</span> <span class="n">path_dir_start</span> <span class="o">+</span> <span class="s2">"data/train"</span>
 <span class="n">tif_train_dir</span> <span class="o">=</span> <span class="n">train_path</span>
 <span class="n">jpeg_train_dir</span> <span class="o">=</span> <span class="n">path_dir_start</span> <span class="o">+</span> <span class="s1">'data/train_jpeg'</span>
@@ -8318,24 +8318,6 @@ _________________________________________________________________
  dense (Dense)               (None, 2)                 258       
                                                                  
 =================================================================
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv2d (Conv2D)             (None, 94, 94, 128)       3584      
-                                                                 
- conv2d_1 (Conv2D)           (None, 92, 92, 128)       147584    
-                                                                 
- max_pooling2d (MaxPooling2D  (None, 46, 46, 128)      0         
- )                                                               
-                                                                 
- global_average_pooling2d (G  (None, 128)              0         
- lobalAveragePooling2D)                                          
-                                                                 
- dropout (Dropout)           (None, 128)               0         
-                                                                 
- dense (Dense)               (None, 2)                 258       
-                                                                 
-=================================================================
 Total params: 151,426
 Trainable params: 151,426
 Non-trainable params: 0
@@ -8379,29 +8361,6 @@ kernel_size: 5
 learning_rate: 0.0001
 Score: 0.7976309657096863
 Model: "sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv2d (Conv2D)             (None, 92, 92, 128)       9728      
-                                                                 
- conv2d_1 (Conv2D)           (None, 88, 88, 128)       409728    
-                                                                 
- max_pooling2d (MaxPooling2D  (None, 44, 44, 128)      0         
- )                                                               
-                                                                 
- conv2d_2 (Conv2D)           (None, 40, 40, 128)       409728    
-                                                                 
- conv2d_3 (Conv2D)           (None, 36, 36, 128)       409728    
-                                                                 
- max_pooling2d_1 (MaxPooling  (None, 18, 18, 128)      0         
- 2D)                                                             
-                                                                 
- global_average_pooling2d (G  (None, 128)              0         
- lobalAveragePooling2D)                                          
-                                                                 
- dropout (Dropout)           (None, 128)               0         
-                                                                 
- dense (Dense)               (None, 2)                 258       
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -8470,34 +8429,6 @@ kernel_size: 3
 learning_rate: 0.0001
 Score: 0.8005226850509644
 Model: "sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv2d (Conv2D)             (None, 94, 94, 128)       3584      
-                                                                 
- conv2d_1 (Conv2D)           (None, 92, 92, 128)       147584    
-                                                                 
- max_pooling2d (MaxPooling2D  (None, 46, 46, 128)      0         
- )                                                               
-                                                                 
- conv2d_2 (Conv2D)           (None, 44, 44, 128)       147584    
-                                                                 
- conv2d_3 (Conv2D)           (None, 42, 42, 128)       147584    
-                                                                 
- max_pooling2d_1 (MaxPooling  (None, 21, 21, 128)      0         
- 2D)                                                             
-                                                                 
- conv2d_4 (Conv2D)           (None, 19, 19, 128)       147584    
-                                                                 
- conv2d_5 (Conv2D)           (None, 17, 17, 128)       147584    
-                                                                 
- max_pooling2d_2 (MaxPooling  (None, 8, 8, 128)        0         
- 2D)                                                             
-                                                                 
- global_average_pooling2d (G  (None, 128)              0         
- lobalAveragePooling2D)                                          
-                                                                 
- dropout (Dropout)           (None, 128)               0         
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
